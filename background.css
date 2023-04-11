@@ -1,0 +1,166 @@
+
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    /* display: grid; */
+    /* border: 1px solid blue; */
+}
+
+.ladning-page{
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+grid-area: 1 / 1 / 6 / 6; 
+}
+
+/** HERO **/
+
+/* #hero {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 90vh;
+}
+
+.hero-title {
+    z-index: 11;
+    font-size: 7em;
+    color: #fff;
+    font-size: 94px;
+    line-height: 92%;
+    margin-right: -5px;
+    text-align: center;
+    position: relative;
+} */
+
+/** CONTACT **/
+
+h3 {
+    max-width: 1000px;
+    text-align: center;
+    font-size: 9em;
+    color: rgb(0, 0, 0);
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    margin-right: 150px;
+    letter-spacing: 5px;
+}
+
+#one {
+    max-width: 600px;
+    /* margin-top: 1em; */
+    text-align: center;
+    font-size: 9em;
+    color: rgb(0, 0, 0);
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    margin-left: 200px;
+    letter-spacing: 5px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+}
+
+
+/** GRADIENT BACKGROUND **/
+
+.animatedwrapper {
+    overflow: hidden;
+    position: absolute;
+    right: 0px;
+    /* top: -100px; */
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content--canvas canvas { 
+    z-index: -1; 
+    position: absolute!important;
+    display: none; 
+}
+
+@media only screen and (max-width: 600px) {
+  .dot {
+    --size: 400px !important;
+        top: 0em !important;
+   }
+  
+  h2 {
+    font-size: 3em  !important;
+   }
+}
+
+.dot {
+   --size: 750px;
+    top: -3em;
+    display: none;
+    position: absolute;
+    width: var(--size);
+    height: var(--size);
+    mix-blend-mode: soft-light;
+    border-radius: var(--size);
+    filter: blur(calc(var(--size) / 4));
+    animation: dot-animation ease-in-out 20s infinite;
+    will-change: transform;
+}
+
+@supports (mix-blend-mode: soft-light) and (filter: blur(1px)) {
+    .animatedwrapper {
+        /* Remove the fallback background image when the features are supported */
+        background: none;
+    }
+
+    .dot {
+        /* Only show the animated dots for browsers that support the required features */
+        display: block;
+    }
+}
+    
+.dot--one {
+    background: #fb7c49;
+    /* --size: 69vw;
+    top: 5em;
+    /* height: 100%; */
+    /* left: 20%; */
+}
+
+.dot--two {
+    background: #fb7c49;
+    animation-delay: -7s;
+    /* --size: 69vw;
+    top: 5em;
+    /* height: 100%; */
+    /* left: 20%; */
+}
+
+.dot--three {
+    background: #fb7c49;
+    animation-delay: -16s;
+}
+   
+@keyframes dot-animation {
+    0% {
+        transform: translate(0, 0);
+    }
+    33% {
+        transform: translate(calc(var(--size) / 1.5), 0);
+    }
+    66% {
+        transform: translate(0, calc(var(--size) / 1.5));
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
