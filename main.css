@@ -5,48 +5,48 @@
     /* border: 1px solid blue; */
     }
     
-    /* DESKTOP GRID */
-    */
-    @media only screen and (min-width: 1200px){
-        .container{
-          background-color: lightcoral;
-          width:100%;
-          /* height:100vh; */
-          display:grid;
-          grid-template-columns: 300px 1fr;
-          grid-template-rows: auto;
-          grid-template-areas:
-                "header header"
-                "landing-page landing-page"
-                "content content"
-                "footer footer"; 
-        }
-    } 
-    /*
-/* END OF DESKTOP GRID */
+ 
 
 /* Portfolio Grid section */
-
+.container{
+    /* background-color: lightcoral; */
+    width:100%;
+    /* height:100vh; */
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+          "landing-page"
+          "content"
+          "footer"; 
+  }
 
 .image-gallery {
-    height: 100%;
     display: grid;
-    grid-template-columns: 1fr minmax(350px, 1fr)  minmax(350px, 1fr) minmax(350px, 1fr) 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-gap: 30px;
-    padding-top: 1000px;
-    padding-bottom: 200px;
+    /* padding-top: 1000px; */
+    /* padding-bottom: 200px; */
     /* background: #FFF; */
     grid-template-areas:
-    ". a b c ."
-    ". d e f ."
+    "a"
+    "b"
+    "c"
+    "d"
+    "e"
+    "f"
     ;
 }
 
+.landing-page{
+    grid-area:landing-page;
+    height:100vh;
+}
 .content{
     grid-area:content;
-    max-width:1920px;
-    max-height:50px;
+    /* max-width:1920px; */
+    /* max-height:50px; */
     margin-bottom: 0px;
     margin: 0 auto;
     text-align: center;
@@ -54,14 +54,16 @@
     }
 .box-styling {
     /* border: 1px solid blue; */
-    height: 350px;
+    margin: 0 auto;
+    width:500px;
+    height: 500px;
     background-color: rgb(110, 110, 110);
     /* clip-path: polygon(5% 5%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); */
 }
 
 .box-wrapper{
-  height:350px;
-  border-radius: 1%;
+  height:450px;
+  /* border-radius: 1%; */
 }
 .box1 {
     grid-area: a;
@@ -93,3 +95,36 @@
     padding-right: .5ch;
 }
 /* End of portfolio grid */
+
+   /* DESKTOP GRID */
+   @media only screen and (min-width: 1200px){
+    .container{
+      background-color: lightcoral;
+      width:100%;
+      /* height:100vh; */
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+            "header header"
+            "landing-page landing-page"
+            "content content"
+            "footer footer"; 
+    }
+    .image-gallery {
+        /* height: 100%; */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 30px;
+        /* padding-top: 1000px; */
+        /* padding-bottom: 200px; */
+        /* background: #FFF; */
+        grid-template-areas:
+        "a b c"
+        "d e f"
+        ;
+    }
+} 
+/*
+/* END OF DESKTOP GRID */
