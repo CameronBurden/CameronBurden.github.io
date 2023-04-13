@@ -11,14 +11,14 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     /* border: 1px solid blue; */
 }
 
-.ladning-page{
+/* .ladning-page{
 display: grid;
 grid-template-columns: repeat(5, 1fr);
 grid-template-rows: repeat(5, 1fr);
 grid-column-gap: 0px;
 grid-row-gap: 0px;
 grid-area: 1 / 1 / 6 / 6; 
-}
+} */
 
 /** HERO **/
 
@@ -42,7 +42,7 @@ grid-area: 1 / 1 / 6 / 6;
 
 /** CONTACT **/
 
-h3 {
+/* h3 {
     max-width: 1000px;
     text-align: center;
     font-size: 9em;
@@ -51,11 +51,11 @@ h3 {
     font-weight: 700;
     margin-right: 150px;
     letter-spacing: 5px;
-}
+}  */
 
-#one {
+/* #one {
     max-width: 600px;
-    /* margin-top: 1em; */
+    margin-top: 1em;
     text-align: center;
     font-size: 9em;
     color: rgb(0, 0, 0);
@@ -65,7 +65,7 @@ h3 {
     letter-spacing: 5px;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 3px;
-}
+} */
 
 
 /** GRADIENT BACKGROUND **/

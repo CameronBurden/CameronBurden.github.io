@@ -21,6 +21,39 @@
           "footer"; 
   }
 
+  .landing-page h3 {
+    max-width: 500px;
+    text-align: center;
+    font-size: 5em;
+    color: rgb(0, 0, 0);
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    margin-right: 100px;
+    letter-spacing: 5px;
+}
+.landing-page #one {
+    max-width: 400px;
+    margin-top: .05em;
+    text-align: center;
+    font-size: 5em;
+    color: rgb(0, 0, 0);
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    margin-left: 200px;
+    letter-spacing: 5px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+}
+header {
+    width:130%;
+}
+
+
+
+  h3 {
+    font-size: 20;
+  }
+
 .image-gallery {
     display: grid;
     grid-template-columns: 1fr;
@@ -111,6 +144,35 @@
             "content content"
             "footer footer"; 
     }
+
+    .landing-page h3 {
+        max-width: 1000px;
+        text-align: center;
+        font-size: 9em;
+        color: rgb(0, 0, 0);
+        font-family: 'Kanit', sans-serif;
+        font-weight: 700;
+        margin-right: 150px;
+        letter-spacing: 5px;
+    }
+    .landing-page #one {
+        max-width: 600px;
+        margin-top: .1em;
+        text-align: center;
+        font-size: 9em;
+        color: rgb(0, 0, 0);
+        font-family: 'Kanit', sans-serif;
+        font-weight: 700;
+        margin-left: 200px;
+        letter-spacing: 5px;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 3px;
+    }
+    header {
+    width:160%;
+}
+    
+
     .image-gallery {
         /* height: 100%; */
         display: grid;
@@ -125,6 +187,7 @@
         "d e f"
         ;
     }
+    
 } 
 /*
 /* END OF DESKTOP GRID */
