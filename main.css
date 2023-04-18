@@ -60,6 +60,7 @@ header {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-gap: 30px;
+    padding: 10px;
     /* padding-top: 1000px; */
     /* padding-bottom: 200px; */
     /* background: #FFF; */
@@ -86,6 +87,7 @@ header {
     text-align: center;
     /* background: red; */
     }
+  
 .box-styling {
     /* border: 1px solid blue; */
     margin: 0 auto;
@@ -129,6 +131,41 @@ header {
     padding-right: .5ch;
 }
 /* End of portfolio grid */
+/* About Me grid */
+.about-m{
+    grid-area:about-m;
+    /* max-width:1920px; */
+    /* max-height:50px; */
+    margin-bottom: 0px;
+    margin: 100 auto;
+    text-align: center;
+    /* background: red; */
+    }
+    
+.about-me{
+    display: grid;
+    background-color: orangered;
+    padding: 10px;
+    /* grid-gap: .5px; */
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "a"
+    "b";
+}
+.about-me img{
+  width: 50%;
+}
+
+
+.image {
+grid-area: a;
+}
+
+.text{
+grid-area: b;
+}
+/* End of About Me grid */
 
    /* DESKTOP GRID */
    @media only screen and (min-width: 1200px){
@@ -143,6 +180,7 @@ header {
             "header header"
             "landing-page landing-page"
             "content content"
+            "about-m about-m"
             "footer footer"; 
     }
 
@@ -190,15 +228,7 @@ header {
     }
     
     /* About Me */
-    .about-m{
-        grid-area:content;
-        /* max-width:1920px; */
-        /* max-height:50px; */
-        margin-bottom: 0px;
-        margin: 100 auto;
-        text-align: center;
-        /* background: red; */
-        }
+  
 
     .about-me {
         height: 100% !important;
@@ -208,12 +238,12 @@ header {
     
     .about-me img{
       width: 60%;
-      border-radius: 8%;
     }
     
     
     .me-p{
-    margin-bottom: 30px;
+        margin-top: 10px;
+        margin-bottom: 30px;
     }
     
     .about-me {
