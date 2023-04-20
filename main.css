@@ -5,8 +5,6 @@
     /* border: 1px solid blue; */
     }
     
- 
-
 /* Portfolio Grid section */
 .container{
     /* background-color: lightcoral; */
@@ -52,6 +50,12 @@ header {
 
   h3 {
     font-size: 20;
+  }
+  .animate__animated.animate__fadeInLeft {
+    --animate-duration: 1.5s;
+  }
+  .animate__animated.animate__fadeInRight {
+    --animate-duration: 1.5s;
   }
 
 .image-gallery {
