@@ -178,7 +178,10 @@ grid-area: b;
     /* background: red; */
     }
 /* End of About Me grid */
-
+ion-icon {
+    font-size: 64px;
+  }
+  
    /* DESKTOP GRID */
    @media only screen and (min-width: 1200px){
     .container{
@@ -195,6 +198,7 @@ grid-area: b;
             "about-m about-m"
             "footer-1 footer-1"; 
     }
+
 
     
     .landing-page h3 {
