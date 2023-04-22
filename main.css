@@ -267,6 +267,8 @@ ion-icon {
         height: 100% !important;
         background-color:#b3b3b3 !important;
         padding: 10vh 50px 10vh 50px;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 600;
     }
     
     .about-me img{
@@ -277,6 +279,8 @@ ion-icon {
     .me-p{
         margin-top: 10px;
         margin-bottom: 30px;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 400;
     }
     
     .about-me {
