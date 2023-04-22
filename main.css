@@ -19,6 +19,9 @@
   a:active {
         text-decoration: none;
   }
+  .box-styling img{
+    object-fit:cover;
+}
 /* Portfolio Grid section */
 .container{
     /* background-color: lightcoral; */
