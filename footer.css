@@ -19,15 +19,18 @@ footer{
 }
 .footer-content h3{
     font-size: 1.8rem;
-    font-weight: 400;
+    font-weight: 600;
     text-transform: capitalize;
     line-height: 3rem;
+    font-family: 'Nunito Sans', sans-serif;
 }
 .footer-content p{
     max-width: 500px;
     margin: 10px auto;
     line-height: 28px;
     font-size: 14px;
+    font-weight: 400;
+    font-family: 'Nunito Sans', sans-serif;
 }
 .socials{
     list-style: none;
@@ -62,9 +65,32 @@ footer{
     font-size: 14px;
     word-spacing: 2px;
     text-transform: capitalize;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
 }
 .footer-bottom span{
     text-transform: uppercase;
-    opacity: .4;
-    font-weight: 200;
+    /* opacity: .4; */
+    font-weight: 600;
+
 }
+
+a:link {
+    color: black;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: black;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: white;
+  }
+  
+  /* selected link */
+  a:active {
+    color: black;
+  }
+  
