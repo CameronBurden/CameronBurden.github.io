@@ -38,7 +38,7 @@
     /* text-transform: uppercase; */
     text-align: center;
     position: relative;
-    font-size: 1em;
+    font-size: 2em;
     padding: 10px;
     font-family: 'Heebo', sans-serif;
     /* color:#FFA100; */
@@ -49,6 +49,7 @@
     text-decoration: none;
     padding: 7px 14px;
     margin: 0;
+    font-size: 25px;
     background-color: transparent;
   }
   
